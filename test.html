@@ -1,0 +1,54 @@
+<!DOCTYPE>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <title>SmartOwl Quizzes</title>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="index.html"><img id="small-logo" src="images/so-logo.png" alt="Smart Owl"></a>
+        <div id="welcome"></div>
+    </nav>
+</header>
+<section id="takeTest">
+    <div id="newTest">
+        <div id="msg"></div>
+        <div id="scoreCard">
+        </div>
+        <div id="newChoices">
+            <form id="qform">
+                <h5 id="qN"> Name of the Quiz </h5>
+                <h2 id="questionText"> Question </h2>
+                <div class="answerbox">
+                    <input type="radio" name="choices"><label id="c-1" for="First">Choice1</label>
+                </div>
+                <div class="answerbox">
+                    <input type="radio" name="choices"><label id="c-2" for="Second">Choice2</label>
+                </div>
+                <div class="answerbox">
+                    <input type="radio" name="choices"><label id="c-3" for="Third">Choice3</label>
+                </div>
+                <div class="answerbox-4">
+                    <input type="radio" name="choices"><label id="c-4" for="Fourth">Choice4</label>
+                </div>
+                <label for="Btns"></label>
+                <div class="button_3">
+                    <input type="button" id="btn-back" value="Back">
+                </div>
+                <div class="button_4">
+                    <input type="button" id="btn-next" value="Next">
+                </div>
+            </form>
+            <div class="button_5">
+                <input type="button" id="btn-home" value="Return">
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="js/smartowl.js"></script>
+</body>
+</html>

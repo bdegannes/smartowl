@@ -1,0 +1,481 @@
+
+p, li {
+    font-family: 'Arbutus Slab', serif;
+    font-weight: 400;
+}
+
+h1, h2, label, input{
+    font-family: 'Asap', sans-serif;
+    font-weight: 400;
+}
+
+
+body{
+    background-color: #4d565b;
+    background-image: url("http://localhost:63342/smartowl/images/noisy-texture.png");
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    /*overflow: hidden;*/
+}
+.main-container{
+	display: flex;
+	position: relative;
+    top: 40px;
+}
+/* Navigation Bar */
+
+nav {
+	padding: 5px;
+}
+
+nav ul{
+	display: flex;
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+    float: right;
+}
+
+nav ul li{
+	padding: 5px 10px;
+
+}
+
+#welcome{
+    float: right;
+    font-size: 36px;
+    margin: 37px;
+}
+
+#top-heading{
+	position: relative;
+	top: 40px;
+}
+
+/* main */
+#intro{
+	height: 385px;
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    top: 135px;
+}
+section h1 {
+	text-align: center;
+}
+
+#large-logo {
+	display: block;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 0 30px;
+    width: 41%;
+}
+
+#uName{
+    background-color: whitesmoke;
+    border: 2px solid #e87724;
+    border-radius: 5px;
+    height: 24px;
+    width: 224px;
+    box-shadow: inset 3px 3px 8px darkgray;
+}
+
+#enterQuiz {
+    background: -webkit-gradient(linear, left top, left bottom, from(#e87624), to(#c45404));
+    background: -webkit-linear-gradient(top, #e87624, #c45404);
+    background: -moz-linear-gradient(top, #e87624, #c45404);
+    background: -ms-linear-gradient(top, #e87624, #c45404);
+    background: -o-linear-gradient(top, #e87624, #c45404);
+    cursor: pointer;
+    border: 1px solid #e87724;
+    border-radius: 4px;
+    margin: 20px 11px 0 20px;
+    color: white;
+    padding: 9px;
+    top: 40px;
+    position: relative;
+}
+
+/* Create Page CSS */
+#small-logo{
+    left: 10px;
+    position: relative;
+    width: 16%;
+}
+
+
+#create{
+    background-color: whitesmoke;
+	width: 850px;
+	height: 600px;
+	margin: 0 20px 0 57px;
+    padding: 20px;
+    border-radius: 8px;
+}
+#creator{
+    margin-top: 60px;
+}
+
+#feed {
+	background-color: whitesmoke;
+    /*border: 2px solid lightblue;*/
+    border-radius: 8px;
+    float: left;
+    height: 600px;
+    width: 350px;
+    padding: 20px;
+    margin: 0 10px 0 20px;
+    text-align: center;
+}
+
+h4{
+    margin: 5px 0;
+    position: relative;
+    left: 15px;
+}
+
+#quiz-feed{
+	width: 350px;
+	height: 100%
+    overflow: auto;
+    text-align: left;
+}
+#qFeed{
+    border-bottom: 2px solid #e87724;
+}
+
+#quiz-feed p{
+    margin: 5px 0;
+}
+
+#quiz-feed a{
+    display: block;
+    left: 35px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+
+/* Form CSS */
+form{
+	position: relative;
+	width: 720px;
+	height: auto;
+	margin: 0 auto;
+    display: block;
+
+}
+
+form input{
+    font-size: 16px;
+    padding: 5px 12px;
+}
+
+h2{
+	font-size: 1.1em;
+
+}
+
+#name{
+    /*margin: 20px;*/
+    padding: 0 20px 20px;
+    height: 20px;
+    width: 740px;
+}
+
+#question{
+	/*margin: 20px;*/
+	padding: 35px 20px 20px;
+	height: 20px;
+	width: 740px;
+}
+
+#answer{
+    height: 20px;
+    width: 740px;
+    padding: 0 0 0 20px;
+    position: relative;
+    top: 190px;
+}
+
+#choices{
+	height: 20px;
+    margin: 0 0 0 66px;
+    padding: 30px 20px 5px;
+    width: 740px;
+}
+
+label{
+
+    font-size: 20px;
+    margin-right: 12px;
+}
+
+#name_input, #question_input, #answer_input, #choice-0, #choice-1, #choice-2, #choice-3{
+    background-color: whitesmoke;
+    border: 2px solid #e87724;
+    border-radius: 5px;
+    height: 20px;
+    width: 534px;
+}
+
+#name_input{
+    margin-left: 25px;
+}
+
+#choice-0, #choice-1, #choice-2, #choice-3{
+    margin: 5px 0 8px 0
+}
+#answer_input{
+    margin-left: 14px;
+}
+
+
+.button_1, .button_2 {
+    display: flex;
+    float: right;
+    position: relative;
+    top: 235px;
+    right: 23px;
+}
+
+.button_2 input[type="button"]{
+    width: 116px;
+}
+
+.button_1 input[type="button"], .button_2 input[type="button"]{
+    background: #e87724;
+    cursor: pointer;
+    border: 1px solid #e87724;
+    border-radius: 4px;
+    margin: 0 11px 0 20px;
+    color: white;
+    padding: 9px;
+}
+
+/*///////////////////////////////////////////////////*/
+/*List of Quizzes*/
+#main{
+    height: 100%;
+    width: auto;
+    overflow: auto;
+}
+
+#quizList{
+    background-color: whitesmoke;
+    border-radius: 8px;
+    height: auto;
+    width: 68%;
+    margin: 0 auto;
+    padding: 25px 10px;
+    position: relative;
+    top: 130px;
+    overflow: hidden;
+    box-shadow:  0 2px 0 rgba(0,0,0,0.05) inset,0 6px 0 rgba(0,0,0,0.1);
+}
+
+#quizList p {
+    text-align: center;
+    font-size: 30px;
+    padding: 0;
+    margin: 0 auto;
+    border-bottom: 2px solid #e87724;
+    width: 95%;
+}
+
+#theList{
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+.qList{
+    cursor: pointer;
+    padding: 2px;
+}
+#theList li{
+    padding: 7px 0;
+    color: #7b8b8e;
+}
+
+#theList li:hover {
+    color: #e87724;
+}
+a.qList:hover{
+    border-bottom: 2px solid lightgray;
+}
+
+/* Take Test */
+#takeTest{
+  height: 100%;
+  width: auto;
+  overflow: auto;
+}
+#newTest{
+  background-color: whitesmoke;
+  border-radius: 8px;
+  height: auto;
+  width: 68%;
+  margin: 0 auto;
+  padding: 25px 0;
+  position: relative;
+  top: 130px;
+  overflow: hidden;
+  box-shadow:  0 2px 0 rgba(0,0,0,0.05) inset,0 6px 0 rgba(0,0,0,0.1);
+}
+
+#qform{
+    width: 100%;
+    margin: 0;
+}
+
+
+#qN{
+    margin: 21px auto 40px;
+    border-bottom: 2px solid #e87724;
+    width: 93%;
+    font-size: 20px;
+}
+
+#qN span{
+    font-size: 17px;
+    float: right;
+    color: #7b8b8e;
+}
+
+#questionText{
+    font-size: 28px;
+    padding: 0 25px;
+    margin: 20px 20px 40px;
+    position: relative;
+    /*right: 50px;*/
+    width: 92%;
+}
+
+#newChoices {
+  font-size: 1.4em;
+  /*padding: 0 20px;*/
+  height: auto;
+}
+
+.button_3 input[type="button"], .button_4 input[type="button"]{
+    background: -webkit-gradient(linear, left top, left bottom, from(#e87624), to(#c45404));
+    background: -webkit-linear-gradient(top, #e87624, #c45404);
+    background: -moz-linear-gradient(top, #e87624, #c45404);
+    background: -ms-linear-gradient(top, #e87624, #c45404);
+    background: -o-linear-gradient(top, #e87624, #c45404);
+    cursor: pointer;
+    border: 1px solid #e87724;
+    border-radius: 4px;
+    margin: 30px 11px 0 20px;
+    color: white;
+    padding: 9px;
+    width: 116px;
+}
+.button_3 input[type="button"]{
+    float: left;
+    left: 54px;
+    position: relative;
+}
+.button_4 input[type="button"]{
+    float: right;
+    right: 60px;
+    position: relative;
+
+}
+.answerbox {
+    border-top: 1px solid #D6D6D6;
+    background-color: #e8e8e8;
+    padding: 14px 30px;
+    cursor: pointer;
+}
+
+.answerbox-4 {
+    border-top: 1px solid #D6D6D6;
+    background-color: #e8e8e8;
+    padding: 14px 30px;
+    border-bottom: 1px solid #d6d6d6;
+    cursor: pointer;
+}
+
+.answerbox:hover,
+.answerbox-4:hover{
+    background-color: #f3f3f3;
+}
+/* Message */
+#msg{
+    font-size: 24px;
+    text-align: center;
+    color: #184d82;
+}
+
+#msg span{
+    padding: 0 200px 0;
+}
+
+.button_5 input[type="button"]{
+    font-size: 16px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e87624), to(#c45404));
+    background: -webkit-linear-gradient(top, #e87624, #c45404);
+    background: -moz-linear-gradient(top, #e87624, #c45404);
+    background: -ms-linear-gradient(top, #e87624, #c45404);
+    background: -o-linear-gradient(top, #e87624, #c45404);
+    border: 1px solid #e87724;
+    border-radius: 4px;
+    margin: 30px 11px 0 20px;
+    color: white;
+    padding: 9px;
+    width: 116px;
+    position: relative;
+    float: right;
+    right: 48px;
+}
+
+#finishMsg {
+    text-align: center;
+    font-size: 25px;
+    color: #184d82;
+    position: relative;
+    top: 120px;
+}
+
+#finishMsg p {
+    font-size: 30px;
+}
+
+#scoreCard {
+    text-align: center;
+    font-size: 7em;
+    padding: 58px 0;
+}
+
+
+/* Footer Navigation */
+
+#footerNav{
+    background-color: #4d565b;
+    margin: 80px 60px 0 57px;
+    padding: 5px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+footer ul{}
+
+footer ul li{
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    left: 913px;
+    margin-bottom: 10px;
+}
+
+footer ul li a{
+    color: white;
+
+}

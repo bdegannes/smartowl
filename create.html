@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700|Arbutus+Slab|Asap:400,700' rel='stylesheet' type='text/css'>
+	<title>SmartOwl Quizzes</title>
+</head>
+<body >
+	<!--<header>-->
+		<!--<nav>-->
+			<!--<img id="small-logo" src="images/smartowl.png" alt="Smart Owl">-->
+		  <!--<ul>-->
+			<!--<li><a href="login.html" id="log-in-btn"> Log In </a></li>-->
+			<!--<li><a href="signup.html" id="sign-up-btn"> Sign Up	</a></li>-->
+		  <!--</ul>-->
+		<!--</nav>-->
+	<!--</header>-->
+	<!--<section id="top-heading">-->
+		<!--<h1>Create your SmartOwl Quiz.</h1>-->
+	<!--</section>-->
+	<div class="main-container">
+
+	<section id="create">
+		<img id="small-logo" src="images/smartowl.png" alt="Smart Owl">
+		<form id="creator">
+			<div id="name">
+				<label for="name">Name :</label>
+				<input type="text" id="name_input" name="name_quiz">
+			</div>
+			<div id="question">
+				<label for="question">Question :</label>
+				<input type="text" id="question_input" name="your_question">
+			</div>
+			<div id="choices">
+				<label for="answers">A : </label>
+				<input type="text" id="choice-0" name="answer_choices"><br>
+				<label for="answers">B : </label>
+				<input type="text" id="choice-1" name="answer_choices"><br>
+				<label for="answers">C : </label>
+				<input type="text" id="choice-2" name="answer_choices"><br>
+				<label for="answers">D : </label>
+				<input type="text" id="choice-3" name="answer_choices"><br>
+			</div>
+			<div id="answer">
+				<label for="correctAns">Answer : </label>
+				<input type="text" id="answer_input" name="correct_answer">
+			</div>
+			<div class="button_1">
+				<input type="button" id="btn-addQuestion" value="Add Question">
+			</div>
+			<div class="button_2">
+				<input type="button" id="btn-finish" value="Finish">
+			</div>
+		</form>
+		<article id="finishMsg">
+		</article>
+	</section >
+	<section id="feed">
+		<h2 id="qFeed">Quiz Feed</h2>
+		<div id="quiz-feed">
+		</div>
+	</section>
+</div>
+    <footer id="footerNav">
+            <ul>
+                <li><a href="login.html" id="log-in-btn"> Log In </a></li>
+                <li><a href="signup.html" id="sign-up-btn"> Sign Up</a></li>
+            </ul>
+    </footer>
+<script type="text/javascript" src="js/createQuiz.js"></script>
+</body>
+</html>
