@@ -2,11 +2,11 @@
  * Created by Dad1 on 8/28/15.
  */
 // Display user greeting when the user signs in.
-var userGreeting = function () {
+(function () {
     var welcome = document.getElementById('welcome');
     var userName = JSON.parse(localStorage.user);
     welcome.innerHTML = ("Welcome, " + userName)
-}();
+})();
 
 function getList (list){
 

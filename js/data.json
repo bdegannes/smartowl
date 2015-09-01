@@ -133,7 +133,7 @@
   },
   {
     "name": "Beowulf",
-    "question": "Who buried the treasure in the vault",
+    "question": "Who buried the treasure in the vault?",
     "choice": ["The Thief", "The last of his race", "Heardred", "The sons of Othere, Eadmund and Eadgils"],
     "correctAnswer": 1
   },

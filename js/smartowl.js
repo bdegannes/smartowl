@@ -8,11 +8,11 @@ var selectedQuiz = questions.filter(function (e){
 });
 
 // Display user greeting when the user signs in.
-var userGreeting = function () {
+(function () {
     var welcome = document.getElementById('welcome');
     var userName = JSON.parse(localStorage.user);
     welcome.innerHTML = ("Welcome, " + userName)
-}();
+})();
 
 
 function QuizController(questions) {
@@ -104,11 +104,8 @@ QuizController.prototype.progressQuiz = function () {
         return null
     }
     var radios = this.quizForm.elements['choices'];
-    for (var i in radios) {
         var uiChoice = radios[answer];
         uiChoice.checked = true;
-    }
-
 };
 
 
@@ -119,10 +116,8 @@ QuizController.prototype.previousQuestion = function(){
     var answer = this.answersQuestionMap[this.currentQuestionIndex];
     this.init();
     var radios = this.quizForm.elements['choices'];
-    for (var i in radios) {
         var uiChoice = radios[answer];
         uiChoice.checked = true;
-    }
 };
 
 
